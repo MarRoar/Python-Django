@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>helloo</h1>
+    <ul>
+        {% for book in booklist %}
+        <li>{{ book.pk }} -- {{ book.btitle }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
