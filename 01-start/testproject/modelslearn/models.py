@@ -6,6 +6,9 @@ class BookInfo(models.Model):
     btitle = models.CharField(max_length=20)
     bpub_date = models.DateTimeField()
 
+    def showName(self):
+        return self.btitle
+
     def __str__(self):
         return "%s" % self.btitle
 

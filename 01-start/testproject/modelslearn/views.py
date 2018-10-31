@@ -11,7 +11,8 @@ def index(request):
     # b = BookInfo.objects.all() # 查询所有的
     # 字段名字__contains
     # b = BookInfo.objects.filter(btitle__contains="经") # 查询btitle 包含有 经 的
-    b = BookInfo.objects.filter(pk__in=[1])
+    # b = BookInfo.objects.filter(pk__in=[1])
+    b = BookInfo.objects.all()
 
     booklist = {
         'booklist': b

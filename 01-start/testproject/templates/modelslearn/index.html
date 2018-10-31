@@ -8,7 +8,9 @@
     <h1>helloo</h1>
     <ul>
         {% for book in booklist %}
-        <li>{{ book.pk }} -- {{ book.btitle }}</li>
+        <p> forloop.counter = {{ forloop.counter }}</p>
+        <li>{{ book.pk }} -- {{ book.showName }}</li>
+        <hr>
         {% endfor %}
     </ul>
 
